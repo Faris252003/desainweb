@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bengkel Mobil OK</title></head>
+    <style>
+        /* CSS untuk gaya navigasi bar */
+        ul.navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #102585; /* Warna latar belakang navigasi */
+            overflow: hidden;
+        }
+
+
+        li.nav-item {
+            float: left;
+        }
+
+        li.nav-item a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li.nav-item a:hover {
+            background-color: #ddd; /* Warna latar belakang saat hover */
+            color: black;
+        }
+
+        /* CSS untuk profil */
+        .profile-container1 {
+            display: flex;
+            justify-content: space-between; /* Membuat elemen berada di sebelah kiri dan kanan */
+            background-color: #f2f2f2; /* Warna latar belakang kontainer */
+            padding: 20px;
+            max-width: 100%; /* Lebar maksimum kontainer */
+            margin: 0 auto; /* Posisi tengah */
+            align-items: center; /* Pusatkan elemen vertikal */
+        }
+
+        /* CSS untuk teks profil */
+        .profile-name {
+            flex: 1; /* Menggunakan sebanyak mungkin lebar yang tersedia */
+        }
+
+        .profile-name h2 {
+            margin: 0;
+        }
+
+        /* CSS untuk gambar profil */
+        .profile-image1 {
+            max-width: 200px; /* Lebar maksimum gambar profil */
+            height: auto;
+            margin-right: 1cm;
+        }
+        .instagram-link {
+            display: inline-block;
+            padding: 5px 10px;
+            border: 2px solid #050505; /* Warna border Instagram */
+            background-color: #40e48f;
+            color: white;   
+            text-decoration: none;
+            border-radius: 5px;
+            white-space: nowrap; /* Tidak melakukan wrapping pada teks panjang */
+            overflow: hidden;
+            text-overflow: ellipsis; /* Mengganti teks yang terlalu panjang dengan elipsis (...) */
+        }
+
+        .instagram-link:hover {
+            background-color: #ff6382; /* Warna latar belakang saat hover */
+            border-color: #ff6382; /* Warna border saat hover */
+        }
+        .vision-mission-box {
+            text-align: center;
+            padding: 20px;
+            background-color: #f2f2f2; /* Warna latar belakang kotak */
+            border: 2px solid #333; /* Border */
+            border-radius: 10px; /* Sudut bulat */
+            max-width: 100%; /* Lebar maksimum kotak */
+        }
+
+        /* CSS untuk teks visi dan misi */
+        .vision-heading, .mission-heading {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .vision-text, .mission-text {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .profile-container {
+            text-align: center;
+            background-color: #f2f2f2; /* Warna latar belakang kontainer */
+            padding: 20px;
+            border: 2px solid #333; /* Border */
+            border-radius: 10px; /* Sudut bulat */
+            max-width: 50%; /* Lebar maksimum kontainer */
+            margin-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* CSS untuk foto profil */
+        .profile-image {
+            max-width: 100px; /* Lebar maksimum foto profil */
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        
+        .profile-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0;
+        }
+        footer {
+            background-color: #102585; 
+            color: white; 
+            padding: 20px 0; 
+            text-align: center;
+        }
+
+      
+        .social-media {
+            margin-top: 20px;
+        }
+
+        .social-media a {
+            color: white; 
+            text-decoration: none;
+            margin: 0 10px; 
+            font-size: 24px; 
+        }
+
+      
+        .contact-info {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        
+        .copyright {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    
+    <ul class="navbar">
+        <li class="nav-item"><a href="index.html">Home</a></li>
+        <li class="nav-item"><a href="tentang.html">Tentang Kami</a></li>
+        <li class="nav-item"><a href="service.html">Service</a></li>
+        <li class="nav-item"><a href="kontak.html">Kontak</a></li>
+        <li class="nav-item"><a href="registrasi.html">Registrasi</a></li>
+    </ul>
+    <br><br><br>
+    <div id="tentang">
+        <div class="vision-mission-box">
+            
+            <div class="vision-heading">CABANG</div>
+            <div class="vision-text">
+                <P>Kami selalu siap memberikan pelayanan terbaik</P> 
+                <P>melalui cabang Bengkel OK</P> 
+                <P>dengan standar pelayanan dan produk terbaik.</P>
+            </div>
+            <div class="mission-heading">CUSTOMER SERVICE</div>
+            <div class="mission-text">
+                <P>Kami memberikan pelayanan penuh</P> 
+                <P>kepada customer dan memberikan garansi</P> 
+                <P>kepada setiap pengerjaan yang ada di bengkel.</P>
+            </div>
+            
+        </div>
+    </div>
+    <br><br><br><br>
+    <div id="kontak">
+        <footer>
+            <div class="contact-info">
+                <p>CV. JUARA SERVICE INDONESIA</p>
+                <p>Copyright©2023 | Powered by bengkel mobil.id</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+

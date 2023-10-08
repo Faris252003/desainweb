@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bengkel Mobil OK</title>
+    <style>
+        /* CSS untuk gaya navigasi bar */
+        ul.navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #102585; /* Warna latar belakang navigasi */
+            overflow: hidden;
+        }
+
+        li.nav-item {
+            float: left;
+        }
+
+        li.nav-item a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li.nav-item a:hover {
+            background-color: #ddd; /* Warna latar belakang saat hover */
+            color: black;
+        }
+
+        /* CSS untuk profil */
+        .profile-container1 {
+            display: flex;
+            justify-content: space-between; /* Membuat elemen berada di sebelah kiri dan kanan */
+            background-color: #f2f2f2; /* Warna latar belakang kontainer */
+            padding: 20px;
+            max-width: 100%; /* Lebar maksimum kontainer */
+            margin: 0 auto; /* Posisi tengah */
+            align-items: center; /* Pusatkan elemen vertikal */
+        }
+
+        /* CSS untuk teks profil */
+        .profile-name {
+            flex: 1; /* Menggunakan sebanyak mungkin lebar yang tersedia */
+        }
+
+        .profile-name h2 {
+            margin: 0;
+        }
+
+        /* CSS untuk gambar profil */
+        .profile-image1 {
+            max-width: 200px; /* Lebar maksimum gambar profil */
+            height: auto;
+            margin-right: 1cm;
+        }
+        .instagram-link {
+            display: inline-block;
+            padding: 5px 10px;
+            border: 2px solid #050505; /* Warna border Instagram */
+            background-color: #40e48f;
+            color: white;   
+            text-decoration: none;
+            border-radius: 5px;
+            white-space: nowrap; /* Tidak melakukan wrapping pada teks panjang */
+            overflow: hidden;
+            text-overflow: ellipsis; /* Mengganti teks yang terlalu panjang dengan elipsis (...) */
+        }
+
+        .instagram-link:hover {
+            background-color: #ff6382; /* Warna latar belakang saat hover */
+            border-color: #ff6382; /* Warna border saat hover */
+        }
+        .vision-mission-box {
+            text-align: center;
+            padding: 20px;
+            background-color: #f2f2f2; /* Warna latar belakang kotak */
+            border: 2px solid #333; /* Border */
+            border-radius: 10px; /* Sudut bulat */
+            max-width: 100%; /* Lebar maksimum kotak */
+        }
+
+        /* CSS untuk teks visi dan misi */
+        .vision-heading, .mission-heading {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .vision-text, .mission-text {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .profile-container {
+            text-align: center;
+            background-color: #f2f2f2; /* Warna latar belakang kontainer */
+            padding: 20px;
+            border: 2px solid #333; /* Border */
+            border-radius: 10px; /* Sudut bulat */
+            max-width: 50%; /* Lebar maksimum kontainer */
+            margin-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* CSS untuk foto profil */
+        .profile-image {
+            max-width: 100px; /* Lebar maksimum foto profil */
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        /* CSS untuk nama dosen */
+        .profile-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0;
+        }
+        footer {
+            background-color: #102585; /* Warna latar belakang footer */
+            color: white; /* Warna teks footer */
+            padding: 20px 0; /* Ruang dalam footer */
+            text-align: center;
+        }
+
+        /* CSS untuk tautan sosial media */
+        .social-media {
+            margin-top: 20px;
+        }
+
+        .social-media a {
+            color: white; /* Warna tautan sosial media */
+            text-decoration: none;
+            margin: 0 10px; /* Ruang antara tautan sosial media */
+            font-size: 24px; /* Ukuran font ikon sosial media */
+        }
+
+        /* CSS untuk informasi kontak */
+        .contact-info {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        /* CSS untuk hak cipta */
+        .copyright {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .contact-container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .contact-info {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .contact-form {
+            flex: 1;
+            padding: 10px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+
+    </style>
+</head>
+<body>
+
+    <ul class="navbar">
+        <li class="nav-item"><a href="index.html">Home</a></li>
+        <li class="nav-item"><a href="tentang.html">Tentang Kami</a></li>
+        <li class="nav-item"><a href="service.html">Service</a></li>
+        <li class="nav-item"><a href="kontak.html">Kontak</a></li>
+        <li class="nav-item"><a href="registrasi.html">Registrasi</a></li>
+    </ul>
+    <div class="contact-container">
+        <div class="contact-info">
+            <h1>Customer Service</h1>
+            <p>Alamat: Jl Jendral Sudirman Pantura Pekalongan Batang </p>
+            <p>Email: bengkelmobilok@gmail.com</p>
+            <p>Whatsapp : 085647952325</p>
+
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com/farkhan_faris25" target="_blank">Instagram</a>
+                
+        </div>
+        <div class="contact-form">
+            <h1></h1>
+            <form action="proses_kontak.php" method="POST">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="pesan">Pesan:</label>
+                <textarea id="pesan" name="pesan" rows="4" required></textarea>
+
+                <input type="submit" value="Kirim">
+            </form>
+        </div>
+    </div>
+        
+    <footer>
+        
+        <div class="contact-info">
+            <p>CV. JUARA SERVICE INDONESIA</p>
+            <p>Copyright©2023 | Powered by bengkel mobil.id</p>
+        </div>
+        
+    </footer>
+</div>
+
+</body>
+</html>
+    
